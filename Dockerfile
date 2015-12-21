@@ -1,7 +1,7 @@
 FROM richarvey/nginx-php-fpm:stable
 
 ENV path /app
-ENV version 2.1.19
+ENV version 2.1.24
 
 RUN apt-get update --fix-missing
 RUN apt-get install -y vim git
