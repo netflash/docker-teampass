@@ -1,14 +1,20 @@
 teampass:
-    image: jcherqui/docker-teampass:latest
+    image: netflash/teampass:latest
     ports:
         - "80:80"
+        - "443:443"
     links:
         - mysql:mysql
+    volumes:
+        - /opt/teampass/includes/settings.php:/app/includes/settings.php
+        - /opt/teampass/includes/sk.php:/app/includes/sk.php
 mysql:
-    image: mysql:latest
-    ports:
-        - "3306:3306"
+    image: mysql/mysql-server:5.5
     environment:
         - MYSQL_ROOT_PASSWORD=mypass
         - MYSQL_DATABASE=teampass
+        - MYSQL_PASSWORD=teampass
+        - MYSQL_USER=teampass
+    volumes:
+        - /opt/teampass/mysql:/var/lib/mysql
 
