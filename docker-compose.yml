@@ -1,5 +1,6 @@
 teampass:
     image: netflash/teampass:2.1.4.24-2
+    restart: always
     ports:
         - "80:80"
         - "443:443"
@@ -9,6 +10,7 @@ teampass:
 #        - /opt/teampass/includes/settings.php:/app/includes/settings.php
 #        - /opt/teampass/includes/sk.php:/app/includes/sk.php
 mysql:
+    restart: always
     image: mysql/mysql-server:5.5
     environment:
         - MYSQL_ROOT_PASSWORD=mypass
