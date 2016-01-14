@@ -6,8 +6,8 @@ teampass:
     links:
         - mysql:mysql
     volumes:
-        - /opt/teampass/includes/settings.php:/app/includes/settings.php
-        - /opt/teampass/includes/sk.php:/app/includes/sk.php
+#        - /opt/teampass/includes/settings.php:/app/includes/settings.php
+#        - /opt/teampass/includes/sk.php:/app/includes/sk.php
 mysql:
     image: mysql/mysql-server:5.5
     environment:
