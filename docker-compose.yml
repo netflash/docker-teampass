@@ -1,5 +1,5 @@
 teampass:
-    image: netflash/teampass:latest
+    image: netflash/teampass:2.1.4.24-2
     ports:
         - "80:80"
         - "443:443"
