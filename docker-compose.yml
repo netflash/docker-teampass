@@ -6,7 +6,7 @@ teampass:
         - "443:443"
     links:
         - mysql:mysql
-    volumes:
+#    volumes:
 #        - /opt/teampass/includes/settings.php:/app/includes/settings.php
 #        - /opt/teampass/includes/sk.php:/app/includes/sk.php
 mysql:
