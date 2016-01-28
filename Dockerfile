@@ -1,7 +1,7 @@
-FROM richarvey/nginx-php-fpm:stable
+FROM richarvey/nginx-php-fpm:latest
 
 ENV path /app
-ENV version 2.1.24.4
+ENV version 2.1.25.0
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update --fix-missing && apt-get upgrade -y
 # https://github.com/nilsteampassnet/TeamPass/issues/801

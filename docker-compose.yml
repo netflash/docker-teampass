@@ -1,5 +1,5 @@
 teampass:
-    image: netflash/teampass:2.1.4.24-2
+    image: netflash/teampass:2.1.25.0-1
     restart: always
     ports:
         - "80:80"
